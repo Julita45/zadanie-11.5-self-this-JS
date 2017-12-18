@@ -10,7 +10,7 @@ Button.prototype = {
 		var self = this;
 		this.$element = $('<button>');
 		this.$element.text(this.text);
-		this.$element.click(function() {
+		this.$element.on('click', function() {
 			alert(self.text);
 			});
 		$('body').append(this.$element);
